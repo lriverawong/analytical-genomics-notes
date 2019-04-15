@@ -1,4 +1,4 @@
-# BIOL331 - Final Exam Study Guide
+# Analytical Genomic Notes
 
 ## W10
 ### DNA Methylation and CpG Island
