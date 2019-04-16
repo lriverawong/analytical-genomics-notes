@@ -3,9 +3,45 @@
 ## Table of Contents
 |       Section        |
 | -----------------    |
-|   [W10](#w10) |
-|   [W11](#w11) |
+|   [W7](#w7) - Genetic Markers, GWAS, SNPs |
+|   [W10](#w10) - Methylation and miRNA       |
+|   [W11](#w11) - Protein-Protein Interactions|
+|   [W12](#w12) - Summary & Synthetic Lethality|
 
+## W6
+### Phenomics + General Info
+- assigning function to genes
+    - observation -> inference -> experiment
+- Yeast Gene deletion experiment
+    - http://www-sequence.stanford.edu/group/yeast_deletion_project/deletions3.html
+- forward vs reverse genetics
+    - forward (phenotype -> sequence)
+        - have phenotype
+        - doing experiment to figure out the underlying causal sequence (the genetics)
+    - reverse (sequence -> phenotype effect)
+        - know sequence (often pertubation/mutation/variant in population)
+        - doing experiments to figure out phenotype
+
+## W7
+### Genetic Markers, GWAS
+- clustering of 770 000  genomes reveals post-colonial population structure of N/A
+- microsatellite
+    - di-, tri-, tetra-nucleotide repeats
+    - length of these microsatellites might be cause of huntington's disease
+- sex specific markers
+    - nuclear DNA is inherite from all ancestors
+    - mitochondrial DNA is inherited from a single lineage
+- single nucleotide polymophism
+    - single bp that varies across population
+    - smallest possible allele
+- genome wide association study (GWAS)
+    - study: identifies novel risk loci for type 2 diabetes
+    - finds likage but not necessarily the gene or the specific mutation
+    - much validation is needed to turn a potential hit into a discovery
+    - there still reamins the problem of reducing it to mechanism and ultimately treatment
+- CNV (Copy Number Variants)
+    - regions with a duplication in the DNA or a deletion
+    - can be identified by quantitative array hybridization assays or by whole genome sequencing
 
 ## W10
 ### DNA Methylation and CpG Island
@@ -69,14 +105,41 @@
     - summarizes data and predicts targets
     - predicts biological targets of microRNAs (miRNAs) by searching for the presence of sites that match the seed region of each miRNA
 
+### Chimp-Human Genetic Relationship
+- sequence b/w humans and chimps are >96-99% identical
+- our closest relative
+- chimp-human difference is 1.06% (1:100 or so)
+- 29% of all chimp protein sequence are identical to human
+- most endogenous retrovirus insertion in humans now extinct
+    - but chimp has two new active retroviral elements
+- rates of evolution - which genes makes us different
+    - synonomous mutations - those that do not cause an amino acid change (K_S) --> broadly neutral 
+        - in humans there is negative selection against them in a large percentage of human ORFs
+    - nonsynonymous substitution is a nucleotide mutation that alters the amino acid sequence of a protein (K_A)
+        - genes under positive selection can be identified by number of non-synonomous mutations relative to synonomous ones
+            - if there are more K_A mutations relative to K_S then gene is under positive selection
+    - K_A (non-synon) / K_S (synon) = measure of selection
+- selection measure values
+    - K_A / K_S << 1 = large number of mutations have been eliminated through purifying selection
+    - K_A / K_S > 1 = implies adaptive or positive selection
+    - mean K_A per gene is 2
+    - mean K_S per gene is 3
+    - K_A/K_S for human-chimp is 0.23
+        - implies that 77% of amino acid changes are sufficiently deleterious so as to be eliminated
+
+- how are we different (possible clues)
+    - HAR1F - microRNA involved in early cerebral cortex development is rapidly changing in humans
+
 ## W11
 
 ### Left Over Bits
-- more odd bits
 - correlates of complexity: orthologues, introns-exons, domain architecture
 - FACS (fluorescence activated cell sorting_ and Mass cytometry
 - metabolomics
     - detecting and quantifying molecules
+- domain accretion leads to more complex domain architectures
+- domain architecture is conserved in orthologues
+    - ex. more domain architecture is conserved in human&fly than in worm&fly
 
 ### Protein Interaction Networks
 - How many proteins per gene?
@@ -122,8 +185,35 @@
             - To confirm results from analyses such as two hybrid, typically a researcher would employ coIP or other affinity methods. This often requires however that a specific reagent be available to identify the proteins in western blots.
         - affinity methods coupled with mass spectrometry for identification
             - Various levels of separation purification prior to analysis.
-        - affinity methods using stable isotope labelling of control and test sample
+            - mass spectrometers allow for automated genomics based strategies for identification of unknown proteins based on mass
+                - measures mass of molecule based on charge and time of flight in magnetic field
+                    - often molecule is fragmented first, ex. by trypsin digestion
+            - methods for affinity tagging proteins
+                - affinity tagging bait
+                    - column to bind tagged bait and associated proteins in complex
+                    - SDS gel to separate proteins
+                    - trypsin digest and mass spectrometer
+                    - saturation of screen: new protein IDs decline with number of purifications
+                - chemical labelling for differential protein expression analysis - ex. iTRAQ
+                    - take samples
+                    - protein extraction and enzyme digestion
+                    - iTRAQ labelling
+                    - mix samples
+                    - HPLC separation of protein mixtures
+                    - MALDI MS/MS analysis
+                        - iTRAQ reporter icons
+                        - MS/MS fragmentation
+        - affinity methods using stable isotope labelling of control and test sample - ex. SILAC
             - pooled samples for differential analysis
+            - SILAC ex.
+                - take two groups
+                    - cell grown in light isotope containing media
+                    - cells grown in heavy isotope containing media + treatment
+                - harvest cells
+                - mix cell lysates (the products of lysis of cells)
+                - create excise bands
+                - trypsin digestions
+                - LC-MS/MS and determining the ratios between light and heavy fragments
 
 ### Protein Structure
 - utility of such bioinformatic programs greatly enhanced by growth in size of 3D structure databases such as PDB and MMDB
@@ -137,9 +227,92 @@
     - start with BLAST search to find orthologues (templates)
     - models primary sequence onto the coordinates of a similar protein with known structure
 
+## W12
+
+### Summary
+
+- Bioinformatics
+    - Theory and practice
+    - alignment and evolutionary interpretation to 3D models
+        - Databases and database searching
+        - Scoring alignments
+        - Similarity, homology, gaps
+        - Substitution matrices
+        - Local and global (and models of protein   - structure)
+        - Optimal and heuristic
+        - Multiple alignments
+        - E-value and inference of homology
+        - Conserved domains
+        - Patterns and profiles
+        - CDD and CDART
+        - Domain architecture
+
+- Genomics
+    - Technology and sequence
+        - NCBI and UCSC
+        - UCSC browser
+        - BLAST and BLAT
+        - TRACKS on UCSC browser
+        - Sequence manipulation (tutorial stuff)
+        - correlation and clustering
+    - Gene identification, expression, phenomics
+        - identification:
+            - General knowledge of sequencing - strategies
+            - Whole genome sequencing
+            - Genetic content
+            - Evolutionary constraint 26 mammals and - comparative genomics track
+            - Individual variation HapMap and 1000 - genomes
+            - Comparative genomics
+                - human, chimp, mouse, Drosophila, Caenorhabditis, E. coli
+            - Gene numbers and genome sizes
+            - mRNA and ESTs
+            - Protein coding genes
+            - miRNA’s
+            - lincRNA’s
+            - rRNA, tRNA, snRNA etc
+            - SNPs, CNVs, indels
+            - Orthologues and paralogues
+        - expression:
+            - Primary transcripts
+            - Alternative start sites
+            - Alternative splicing
+            - Isoforms
+            - Microarrays
+            - RNA-seq
+            - ChIP-seq
+            - Encode and Fantom5
+            - Transcription factors, promoters - and enhancers
+            - lincRNA
+            - Long range interaction
+
+- Functional genomics
+    - Regulation
+        - phenomics
+        - gene deletion
+        - siRNA and knockdowns
+        - Crispr
+        - SNPs
+        - GWAS
+
+- Genes, gene products, interactions and networks
+    - two hybrid, coimmunoprecipitation
+    - affinity tags
+    - mass spectrometry
+    - binary and co-complex
+    - random and scale free networks
+    - synthetic lethality
+    - FACS and mass cytometry
+
+- Prospects, issues and ethics
+ 
+
+### Sanna Masud Lecture
+- synthetic lethality genetic screen applied to human embryonic stem cells
+- 
+
 ## Review
 - profiles
     - for members of single families
 - pams or blossoms
     - average of many populations
-- e-values
+- e-value: random expection
