@@ -9,6 +9,28 @@
 |   [W11](#w11) - Protein-Protein Interactions|
 |   [W12](#w12) - Summary & Synthetic Lethality|
 
+## W4
+### Asgard Archaea
+- current data support scenarios in which an archaeal host cell and an alphaproteobacterial (mitochondrial) endosymbiont merged ogether, resulting in the first eukaryotic cell
+- host cell is related to lokiarchaeota, archaeal phylum with many eukaryotic features
+- the emergenceof the structrual complexity that characterizes eukaryotic cells remains unclear
+- here we describe the 'Asgard' superphylum - a group of uncultivated archaea that include:
+    - lokiarchaeota
+    - thorarchaeota
+    - odinarchaeota
+    - heimdallarchaeota
+- asgard archaea affiliate with eukaryotes in phylogenomic analyses and their genomes are enriched for proteins formely considered specific to eukaryotes
+- thorarhaeal genomes encode
+    - several homoloues of eukaryotic membrane - trafficking machinery components including Sec23/24 and TRAPP domains
+    - also proteins with similar feature to eularyotic coat proteins involved in vesicle biogenesis
+- study indicates that the archaeal host cell already contained many key components that govern eukaryotic cellular complexity
+- order of phylogenenic tree
+    - ordin
+        - loki
+            - thor
+                - heimdall
+                    - ..... eukarya
+
 ## W6
 ### Phenomics + General Info
 - assigning function to genes
@@ -35,6 +57,11 @@
 - single nucleotide polymophism
     - single bp that varies across population
     - smallest possible allele
+- Linkage disequilibrium (far - assort independently, close = reduced recomb. freq.)
+    - Loci on different chromosomes assort independently of each other
+    - Loci far apart on the same chromosome assort independently
+    - Loci close together on the same chromosome have reduced frequency of recombination between them and therefore DO NOT assort independently – they are linked
+    - Detecting Linkage Disequilibrium (non-random assortment) between loci implies that they are close together on a chromosome
 - genome wide association study (GWAS)
     - study: identifies novel risk loci for type 2 diabetes
     - finds likage but not necessarily the gene or the specific mutation
@@ -43,6 +70,15 @@
 - CNV (Copy Number Variants)
     - regions with a duplication in the DNA or a deletion
     - can be identified by quantitative array hybridization assays or by whole genome sequencing
+### Thousand Genomes and 29 Mammals Project
+- monitoring conservation of function by sequence conservation within or between species
+- thousand genomes
+    - examination of evolutionary signatures identifies SCEs (synonymous constraint elements) and evidence of positive selection
+    - (29 mammals project) - at least 5.5% of human genome has undergone purifying selection and locate contraint elements covering ~4.2% of the genome
+        - purifying selection = negative selection = selective removal of alleles that are deleterious - this can result in stabalizing selection
+            - ex. carriers of the harmful point mutation have fewer offspring each generation, reducing the frequency of the mutation in the gene pool
+        - Synonymous constraint elements (SCEs) are protein-coding genomic regions with very low synonymous mutation rates believed to carry additional, overlapping functions
+            - protein structural disorder provides evolutionary advantage when accommodating multiple overlapping functions in coding regions.
 
 ## W10
 ### DNA Methylation and CpG Island
@@ -117,7 +153,7 @@
     - synonomous mutations - those that do not cause an amino acid change (K_S) --> broadly neutral 
         - in humans there is negative selection against them in a large percentage of human ORFs
     - nonsynonymous substitution is a nucleotide mutation that alters the amino acid sequence of a protein (K_A)
-        - genes under positive selection can be identified by number of non-synonomous mutations relative to synonomous ones
+        - genes under positive selection can be identified by number of non-synonymous mutations relative to synonymous ones
             - if there are more K_A mutations relative to K_S then gene is under positive selection
     - K_A (non-synon) / K_S (synon) = measure of selection
 - selection measure values
