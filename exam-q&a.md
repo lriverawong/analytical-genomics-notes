@@ -193,13 +193,37 @@
 
 39. Epigenetic methylation of histones activates gene expression
     - T & F -- some are activated and some deactivated (from chart most are activated)
-40. lnRNA (long non-coding RNA) are rare in human genome
-    - F
+40. lnRNA (lncRNA - long non-coding RNA) are rare in human genome
+    - F -- ~58000 lncRNAs in humans whereas only ~22000 protein coding genes
 
 41. miRNA can both activate and repress protein translation
     - T
 
 ## 2017 Exam
-### Part A - MC
+### Part A - T/F
+1. Complexity of human genome is 3 billion base pairs
+    - T -- to the size part but genome size does not define complexity
 
-### Part B - T/F
+2. Most human genes have an orthologue in capybara (rodent)
+    - F -- manual checking of orthology b/w rodent and human?
+
+3. A large percentage of human transcription start sites do not align with the mouse genome
+    - T
+
+4. Hi-C analysis can be used to discover associations between enhancer elements and promoters
+    - answer = T? -- may not be tested
+    - Hi-C (all-vs-all) uses high throughput sequencing to find the nucleoide sequence of fragments, all pairwise interactions between fragments are tested
+    - 3C (one vs. one) - quantifies interacions between a single pair of genomic loci - can be used for promoter-enhancer interaction
+
+5. Species can be defined by the discovery of multiple isolates of a novel sequence from the environment differeing from all previously known sequences by more than 1% divergence
+    - T -- can't find evidence
+
+6. lncRNA genes are less common than protein coding genes in humans
+    - False -- more common than protein coding genes
+
+7. Methylation of CpG islands activates gene expression
+    - F --repression
+
+8. 
+
+### Part B - MC
