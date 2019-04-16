@@ -3,6 +3,7 @@
 ## Table of Contents
 |       Section        |
 | -----------------    |
+|   [W6](#w6) - Phenomics |
 |   [W7](#w7) - Genetic Markers, GWAS, SNPs |
 |   [W10](#w10) - Methylation and miRNA       |
 |   [W11](#w11) - Protein-Protein Interactions|
