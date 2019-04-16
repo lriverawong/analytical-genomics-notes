@@ -18,6 +18,7 @@
         1. Methylation of CpG islands may prevent or enhance binding of regulatory transcription factors to promoter region
 
         ![alt text](assets/methyl-inhibition-01.png "Methylation Method 01")
+
         2. Inhibition using methyl-CpG-binding proteins, which bind methylated sequences
 
         ![alt text](assets/methyl-inhibition-02.png "Methylation Method 02")
@@ -69,3 +70,76 @@
     - predicts biological targets of microRNAs (miRNAs) by searching for the presence of sites that match the seed region of each miRNA
 
 ## W11
+
+### Left Over Bits
+- more odd bits
+- correlates of complexity: orthologues, introns-exons, domain architecture
+- FACS (fluorescence activated cell sorting_ and Mass cytometry
+- metabolomics
+    - detecting and quantifying molecules
+
+### Protein Interaction Networks
+- How many proteins per gene?
+    - factors:
+        - alternative splicing - isoforms
+        - limited proteolysis
+        - editing
+        - covalent modification
+            - phosphorylation Ser Thr Tyr His
+            - methylation, adenylation
+            - myristylation, palmitoylation, GPI-linked
+            - glycosylation
+            - ubiquitinylation, sumoylation etc.
+    - Proteome estimated as high as 10-100x gene number (or more) if defined as all of the individual forms of proteins in cell
+
+- How do we separate and detect proteins?
+    - SDS gel electrophoresis
+    - Immunoblotting
+    need specific reagents e.g. antibodies
+    - Mass spectrometry
+        - ID proteins by mass of fragments, identify protein if you
+        know its sequence
+        - Does not require specific reagents
+        - Able to identify covalent modified residues -- shift in mass
+
+- protein modifications
+    - Any of the covalent modifications could promote, inhibit or be neutral with respect to protein interaction. When testing for interaction, any of them could affect whether or not a response is identified.
+    - A typical high throughput experiment showing a proteinprotein interaction is usually confirmed by at least two independent means, for example two hybrid analysis and coimmunoprecipitation (usually used in validation).
+    - In co-immunoprecipitation, one protein is immunoprecipitated with a specific antibody and then interacting proteins are detected by western blotting of the precipitate. It assumes that such interacting proteins were interacting in the cell prior to cell breakage.
+
+- protein-protein interaction assessment
+    - Protein-protein interaction is also assessed by a variety of copurification, gradient centrifugation, native gel, gel overlay and column chromatography methods. These are the stock and trade of traditional biochemistry.
+    - Obviously retaining protein interactions during such procedures is dependent on the local environment i.e. buffer, ions, etc. Under specific conditions the proteins interact.
+    - The stringency of those conditions, just as in nucleic acid hybridization, dictates which molecular associations remain intact and therefore can be assayed.
+
+- genomics
+    - Focuses on large scale analysis of interactions
+    - genome wide functional assay of proteins
+        - dealing with individual proteins or devise strategies for making and assaying them at large scale
+    - techniques:
+        - two hybrid analysis
+            - Monitor protein-protein interaction by expressing the two proteins within a cell and designing a reporter system to indicate whether they interact or not.
+            - To confirm results from analyses such as two hybrid, typically a researcher would employ coIP or other affinity methods. This often requires however that a specific reagent be available to identify the proteins in western blots.
+        - affinity methods coupled with mass spectrometry for identification
+            - Various levels of separation purification prior to analysis.
+        - affinity methods using stable isotope labelling of control and test sample
+            - pooled samples for differential analysis
+
+### Protein Structure
+- utility of such bioinformatic programs greatly enhanced by growth in size of 3D structure databases such as PDB and MMDB
+- some genomics research programs in structural bio set out to cyrstallize and determine the sequence of new gene products, especially unknown function or sequence orphans in hope of discovering function and/or new folds
+
+- prediction of protein function ex. Swiss Model
+    - instead of making prediction directly from primary sequence, some programs start by running BLAST search adn then model unknownagainst a highly similar protein for which the crystal cordinate are already known and present in PDB
+    - works if it's beleived that primary sequence dictates structure and highly similar sequences (orthologues) maintain sequence similarity because they're structurally related
+
+- Swiss Model
+    - start with BLAST search to find orthologues (templates)
+    - models primary sequence onto the coordinates of a similar protein with known structure
+
+## Review
+- profiles
+    - for members of single families
+- pams or blossoms
+    - average of many populations
+- e-values
